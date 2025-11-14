@@ -835,25 +835,29 @@
     height: 45px;
   }
 
-  #appointment button#cf-submit {
+  /* #appointment button#cf-submit {
     background: #a5c422;
     color: #ffffff;
     font-weight: 600;
     height: 55px;
-  }
+  } */
 
-  #appointment button#cf-submit:hover {
+  /* #appointment button#cf-submit:hover {
     background: #393939;
     color: #ffffff;
-  }
+  } */
+  #contact h3{
+    font-family: 'Farley';
+    color: #a9831a;
+ }
 
   #btn a{
     margin-top: 25px;
     font-size: 18px;
     font-weight: 600;
-    color: #fff;
+    color: #024959;
     text-transform: capitalize;
-    background-color: #024959;
+    background-color: #0be72f;
     display: inline-block;
     height: 44px;
     line-height: 44px;
@@ -865,9 +869,10 @@
 
   #btn a:hover{
     background-color: #a9831a;
-    /* color: #45489a; */
+    color: #f6f6f8;
 
   }
+  
 /* Boton Flotante */
 
  
@@ -878,7 +883,7 @@
     letter-spacing: 2px; /*espacio entre letras*/
     background-color: #30bb30;
     padding: 15px 15px;
-    color: white;
+    color: #024959;
     border-radius: 50%;
     position: fixed;
     right: 20px;
@@ -889,7 +894,9 @@
   }
 
   .flotante .btn-flotante .btn:hover{
-    color: #024959;
+    color: #fafbfc;
+      background-color: #a9831a;
+
     box-shadow: 0px 15px  rgba(255,255,255,0.1 );
     transform: translateY(-7px);
   }
@@ -927,17 +934,18 @@
   }
 
   .footer-medio{
-    display: flex;
-    align-items: center;
+    margin: 0 auto; /* Centra el contenido */
   }
 
-
+  .footer-medio h4{
+    padding-left: 90px;
+  }
 
   footer img{
     width: auto; /* Mantener proporciones */
     height: 100px;
     /* scale: 3; */
-    display: block; /* Eliminar espacio extra */
+    /* display: block; Eliminar espacio extra */
     padding-left: 90px;
   }
 
@@ -958,11 +966,11 @@
     margin-bottom: 2px;
   }
 
-  .latest-stories {
+  /* .latest-stories {
     margin-bottom: 20px;
-  }
+  } */
 
-  .stories-image,
+  /* .stories-image,
   .stories-info {
     display: inline-block;
     vertical-align: top;
@@ -985,7 +993,7 @@
   .stories-info span {
     color: #858585;
     font-size: 12px;
-  }
+  } */
 
   .opening-hours p {
     line-height: 18px;

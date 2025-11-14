@@ -1065,6 +1065,88 @@
 
 
   /*---------------------------------------
+     GALERIA             
+  -----------------------------------------*/
+
+  #gallery {
+    padding: 50px 0; /* Espaciado superior e inferior */
+    background-color: #f9f9f9; /* Color de fondo */
+}
+
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+    text-align: center; /* Centrar el texto */
+}
+
+.gallery-grid {
+    display: grid; /* Usar grid para organizar los elementos */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 15px; /* Espaciado entre elementos */
+}
+
+.gallery-item {
+    width: 100%; /* Ancho completo del contenedor */
+    padding-top: 100%; /* Mantener la relación de aspecto cuadrada */
+    position: relative; /* Para posicionar la imagen dentro */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.gallery-item img {
+    position: absolute; /* Posicionar la imagen */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    object-fit: cover; /* Recortar la imagen */
+    transform: translate(-50%, -50%); /* Centrar la imagen */
+    transition: transform 0.3s ease; /* Transición para el efecto hover */
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+/* Estilo del modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo para ocupar toda la pantalla */
+    z-index: 1; /* Por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Permitir desplazamiento si es necesario */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+}
+
+.modal-content {
+    margin: auto; /* Centrar el contenido */
+    display: block; /* Mostrar la imagen */
+    width: 80%; /* Ancho del modal */
+    max-width: 700px; /* Ancho máximo del modal */
+}
+
+.close {
+    position: absolute; /* Posicionar el botón de cerrar */
+    top: 20px; /* Espaciado desde la parte superior */
+    right: 35px; /* Espaciado desde la derecha */
+    color: white; /* Color del texto */
+    font-size: 40px; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    transition: 0.3s; /* Transición suave */
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb; /* Color al pasar el mouse */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cursor de puntero */
+}
+
+
+  /*---------------------------------------
      RESPONSIVE STYLES              
   -----------------------------------------*/
 
@@ -1126,6 +1208,11 @@
       display: inline-block;
       padding-top: 8px;
       padding-bottom: 8px;
+    }
+    
+    .navbar-brand img{
+      max-height: 60px; /* Cambia la altura máxima en pantallas más pequeñas */
+        padding-left: 15px;
     }
 
     .news-sidebar {

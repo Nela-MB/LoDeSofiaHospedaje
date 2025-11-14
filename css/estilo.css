@@ -1023,11 +1023,31 @@
   .social-icon li {
     display: inline-block;
     list-style: none;
+    
+  }
+
+  .team-thumb {
+    background-color: #f9f9f9;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .team-contact-info a {
+    color: #757575;
+  }
+  .team-contact-info {
+    border-top: 1px solid #272020;
+    padding-top: 1.2em;
+    margin-top: 1.5em;
   }
 
   .social-icon li a {
+        background: #d9831a;
+
     border-radius: 100px;
-    color: #f8f4f4;
+    color: #221919;
     font-size: 15px;
     width: 35px;
     height: 35px;
@@ -1040,7 +1060,7 @@
 
   .social-icon li a:hover {
     background: #4267b2;
-    color: #ffffff;
+    color: #e9eee9;
   }
 
 
